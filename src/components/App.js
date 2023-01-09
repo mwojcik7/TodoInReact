@@ -51,7 +51,7 @@ const App = () => {
     },
   ])
 
-  let nextId = 6
+  const [nextId, setNextId] = useState(tasks.length)
 
   const deleteTask = (id) => {
     console.log('delete - ', id)
@@ -85,12 +85,14 @@ const App = () => {
 
   const addTask = (text, date) => {
     const task = {
-      id: nextId++,
+      id: nextId,
       text,
       date,
       active: true,
       finishDate: null
     }
+
+    setNextId(prevValue => prevValue + 1)
 
     setTasks(prevState => [...prevState, task])
 
