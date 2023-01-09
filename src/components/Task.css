@@ -1,0 +1,43 @@
+.task {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  /* min-width: 500px; */
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 8px 20px #0005;
+}
+
+.task-data {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.task-buttons-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+}
+
+.task button {
+  padding: 5px 10px;
+  text-transform: uppercase;
+  background-color: #ffdd00;
+  border: 0;
+  border-radius: 7px;
+  box-shadow: 0 5px 15px #0005;
+  cursor: pointer;
+}
+
+.task button:nth-child(2) {
+  margin-left: 20px;
+}
+
+.task button svg {
+  width: 20px;
+  height: 20px;
+}
