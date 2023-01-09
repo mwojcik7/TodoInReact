@@ -54,12 +54,6 @@ const App = () => {
   const [nextId, setNextId] = useState(tasks.length)
 
   const deleteTask = (id) => {
-    console.log('delete - ', id)
-
-    // const tasksCopy = [...tasks]
-    
-    // const index = tasksCopy.findIndex(task => task.id === id)
-    // tasksCopy.splice(index, 1)
 
     let tasksCopy = [...tasks]
 
