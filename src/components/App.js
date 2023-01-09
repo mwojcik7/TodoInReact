@@ -63,8 +63,6 @@ const App = () => {
   }
 
   const changeTaskStatus = (id) => {
-    console.log('change - ', id)
-
     let tasksCopy = [...tasks]
 
     tasksCopy.forEach(task => {
